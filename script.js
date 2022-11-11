@@ -193,8 +193,11 @@ receiptCloseBtn.addEventListener('click', ()=>{
         element.innerHTML = 0 + ` сум`;
     })
 
-    const productCalories = document.querySelectorAll('.main__product-call');
+    const productCalories = document.querySelectorAll('.calories__counter');
     productCalories.forEach(element => {
-        element.innerHTML =  0 + ` калорий`;
+        element.innerHTML =  0;
     })
+    for(let key in burgerObj){
+        burgerObj[key].amount = 0
+    }
 })
